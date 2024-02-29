@@ -11,7 +11,7 @@
         background-color: beige;
     }
     body{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
         margin: 0;
         padding: 0;
        
@@ -20,6 +20,16 @@
         text-align: center;
         padding: 10px;
         background-color: beige;
+    }
+    table{
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+    }
+    th, td{
+        padding: 8px;
+        border: 1px solid antiquewhite;
+        text-align: left;
     }
     
 </style>
@@ -30,10 +40,9 @@
     <header>
     <h1>Welcome to my page!</h1>
     <nav>
-        <a href="/Links/">Links</a> |
-        <a href="/css/">Lists</a> |
-        <a href="/js/">JavaScript</a> |
-        <a href="/python/">Python</a>
+        <a href="#text">Text Formating</a> |
+        <a href="#list">List</a> |
+        <a href="#table">Table</a> |
       </nav>
 </header>
 
@@ -46,7 +55,7 @@
 
 <p><b> This is a paragraph. </b> The song describes a magical journey through a world filled with wonder and excitement. The speaker, like a shooting star, can open the eyes of the princess, taking her on a journey of discovery and discovery. The journey takes them through an endless diamond sky, revealing a dazzling place they've never known before. The speaker encourages the princess to explore this new world, describing it as a thrilling chase and wondrous place.</p>
 
-
+<section class="page-section text" id ="text"></section>
 <hr><b>Text Formatting</b><hr>
 <b>This text is bold</b>
 <strong>This text is important!</strong>
@@ -59,6 +68,7 @@
 <p>This is <sub>subscripted</sub> text.</p>
 <p>This is <sup>superscripted</sup> text.</p>
 
+<section class="page-section list" id ="list"></section>
 <hr><b>Lists</b><hr>
 <h4> This is unordered lists:</h4>
 <ul>
@@ -88,6 +98,7 @@
  <hr><b>Image</b><hr>
  <img src="images/me.jpg" alt="this is me!">
 
+<section class="page-section table" id ="table"></section>
 <hr><b>Table</b><hr>
 <table>
     <tr>
@@ -116,8 +127,6 @@
     <input type="text" id="lname" name="lname">
   </form>
 
-<hr>Semantic Elements<hr>
-<p>WIP</p>
 
 
 <footer>
